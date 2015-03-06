@@ -1,0 +1,27 @@
+The NetFPGA-v1 board itself measures six inches by nine
+inches and contains three Altera EP20K400 APEX devices, an
+eight-port Ethernet controller, three 1MByte SRAMs and ancillary
+logic. There is no on-board CPU. One of the three FPGAs,
+called the Control FPGA (CFPGA) is pre-programmed
+and connects the Ethernet controller to the two User FPGAs
+(UFPGAs). All communication with the board is via the Ethernet
+ports - the only other physical connectors are for power and
+reset.
+Students develop their designs using Synopsys tools for synthesis
+and simulation, and the Altera Quartus tool for placeand-
+route. We provide some scripts and libraries to simplify
+the development and debug process.
+When their design has been simulated and synthesized, students
+upload the FGPA conguration le to a NetFPGA-v1
+board via a simple web interface. The students then send packets
+to their board, and capture packets received from their board,
+in order to verify the hardware functionality. Ultimately the students
+interconnect their board to the campus network and their
+design then carries regular internet trafc. We used a locally
+developed tool, called the Virtual Network System [1], to map
+the NetFPGA-v1 ports into the campus internet.
+In most FPGA-based projects we have seen, including those
+at Stanford, there is an emphasis on hands-on debugging of the
+hardware using logic analyzers. For NetFPGA-v1 we consider
+this a last resort  students are strongly encouraged to simulate
+rst and debug last. The hands-off nature of the NetFPGA-v1

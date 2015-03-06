@@ -1,0 +1,6 @@
+A B 3 BRA
+A C 3 CRA
+B A 3 ARB
+B C 3 CRB
+C A 3 ARC
+C B 3 BRC
